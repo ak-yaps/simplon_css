@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  left: 0;
+}
+
+h3 {
+  margin: 1.5rem 0;
+  padding:1.5rem 0;
+  border: solid mediumorchid;
+  color: mediumorchid;
+  text-align: center;
+}
+
+/* Exercice 1: Cible rouge*/
+
+.blanc {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.rouge {
+  background-color: red;
+  color: black;
+  border: 2px dashed black;
+  width: 150px;
+  height: 150px;
+}
+
+/*Exercice 2: Shaped table*/
+
+.shaped_table tr td {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+}
+
+.table_colored_cell td:nth-child(odd) {
+  background-color: thistle;
+  color: black;
+}
+
+/*Exercice 3: Purple margins*/
+
+.purle_container {
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+.purle_line {
+  background: purple;
+  color: black;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.purple_line_one, .purple_line_four {
+  width: 25%;
+}
+
+.purple_line_two, .purple_line_three {
+  width: 75%;
+}
+
+.purple_line_three {
+  margin-left: 25%;
+}
+
+.purple_line_four {
+  margin-top: 0;
+}
+
+/*Exercice 4: Red and Black Rows*/
+
+.colored_row {
+  font-size: 0;
+}
+
+.colored_numbers {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.red {
+  background-color: red;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  margin-top: 5px;
+  color: red;
+}
+
+/*Exercice 5: green dots*/
+
+.dots_container, .dots_container_float {
+  border: 1px solid black;
+  width: 50%;
+  margin-top: 10px;
+  padding: 2%;
+}
+
+.greendots {
+  background-color: green;
+  color: white;
+  display: inline-block;
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  padding: 20%;
+  margin: 2%;
+}
+
+
+/*Exercice 6: Blue blocks*/
+.container_black_border {
+  border: 2px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.container {
+  font-size: 0;
+}
+
+.container_lightgrey {
+  background-color: lightgrey;
+  color: black;
+}
+
+.blueblock {
+  background: blue;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.blueblock_lightgrey {
+  width: calc(97% / 4);
+  margin-right: 1%;
+}
+
+.blueblock_lightgrey:last-child {
+  margin-right: 0
+}
+
+.container_darkgrey {
+  background: darkgrey;
+  color: black;
+
+}
+
+.container_orange_60 {
+  width: 70%;
+  display: inline-block;
+}
+
+.blueblock_orange_60, .blueblock_orange_40 {
+  width: calc(99% / 2);
+  margin-right: 1%;
+}
+
+.blueblock_orange_60:nth-child(even), .blueblock_orange_40:nth-child(even) {
+  margin-right: 0;
+}
+
+.container_orange_40 {
+  width: 30%;
+  display: inline-block;
+}
+
+/*DICTEE*/
+
+.wrap {
+  width: 900px;
+  margin: auto;
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.chose {
+  width: 250px;
+  height: 250px;
+  background: gold;
+}
+
+.truc {
+  width: 200px;
+  height: 200px;
+  background: plum;
+}
+
+.chose .truc {
+  background: crimson;
+}
+
+.chose.truc {
+  background: hotpink;
+}
+
+.chose > .truc {
+  background: teal;
+  width: 225px;
+}

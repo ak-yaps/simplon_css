@@ -1,0 +1,21 @@
+@mixin yaps() {
+    height: 100vh;
+    width: 100%;
+    background: $violet;
+    margin: $centre;
+}
+
+@mixin keyframes ($move) {
+    @-webkit-keyframes #{$move} {
+        @content
+    }
+    @-moz-keyframes #{$move} {
+        @content
+    }
+    @-o-keyframes #{$move} {
+        @content
+    }
+    @keyframes #{$move} {
+        @content
+    }
+}

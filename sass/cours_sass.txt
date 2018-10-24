@@ -1,0 +1,2 @@
+On déclare les variables dans le fichier layout
+mixins : ensemble d'infos crée

@@ -1,0 +1,88 @@
+@import "layout.scss";
+@import "base.scss";
+@import "reset.scss";
+@import "responsive.scss";
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.wrap {
+  @include yaps();
+}
+
+header {
+  background: $gris;
+  width: 100%;
+  height: $unit+12;
+}
+
+nav {
+  width: 100%;
+  height: $unit*8;
+  background: thistle;
+  ul {
+    list-style: none;
+    li {
+      display: block;
+      float: $gauche;
+      height: $unit*8;
+      width: 20%;
+      line-height: $unit*8;
+      padding: 0 5%;
+      a {
+        text-decoration: none;
+        color: MediumOrchid;
+        &:hover {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@include keyframes(move) {
+  0% {
+    width: $unit - 10
+  }
+  100% {
+    width: 100%
+  }
+}
+
+div.toto {
+  width: $unit*30;
+  height: 100vh;
+  background: DarkMagenta;
+  animation: 5s move 500ms linear infinite;
+}
+
+@media screen and (max-width:$phone) {
+  body {
+    background: skyblue;
+  }
+}
+
+@media screen and (min-width:$phone+1) and (max-width:$tablet) {
+  body {
+    background: deepskyblue;
+  }
+}
+
+@media screen and (min-width:$tablet+1) and (max-width:$desktop - 1) {
+  body {
+    background: dodgerblue;
+  }
+}
+
+@media screen and (min-width:$desktop) {
+  body {
+    background: midnightblue;
+  }
+}
+
+@media #{$screen} {
+  body {
+    border: 1px dotted red;
+  }
+}
